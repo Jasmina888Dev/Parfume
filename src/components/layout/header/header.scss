@@ -1,0 +1,44 @@
+#header {
+  background: rgba(212, 229, 242, 0.771);
+  border-bottom: 30px solid rgba(255, 255, 255, 0.616);
+  margin: 0 0;
+  padding: 0 0;
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img {
+      background: transparent;
+    }
+    &--nav {
+      display: flex;
+      align-items: center;
+      gap: 80px;
+      a {
+        font-size: 23px;
+        font-family: sans-serif;
+        font-weight: 100;
+        color: rgba(33, 37, 41, 1);
+        transition: 0.5s;
+        &:focus {
+          color: white;
+        }
+      }
+    }
+    &--icons {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      a {
+        font-size: 22px;
+        font-weight: 100;
+        color: rgba(33, 37, 41, 1);
+        transition: 0.5s;
+        &:focus {
+          color: white;
+        }
+      }
+    }
+  }
+}

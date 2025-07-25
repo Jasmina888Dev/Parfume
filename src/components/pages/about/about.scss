@@ -1,0 +1,45 @@
+#about {
+  .about {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    &--dior {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      margin-bottom: 100px;
+      h1 {
+        color: white;
+      }
+      h2 {
+        color: white;
+        font-weight: 400;
+      }
+      p {
+        color: rgba(255, 255, 255, 0.763);
+        text-align: center;
+      }
+      &__img {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        overflow-x: scroll;
+        scrollbar-width: none;
+        width: 100%;
+        img {
+          width: 40%;
+          height: 200px;
+          transition: 0.8s;
+          &:hover {
+            transform: translateY(-15px);
+          }
+        }
+      }
+    }
+  }
+}

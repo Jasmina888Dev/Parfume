@@ -1,0 +1,105 @@
+#product {
+  margin-bottom: 40px;
+  .product {
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 100px;
+    width: 100%;
+    &--block1 {
+      padding-top: 30px;
+      width: 30%;
+      height: 750px;
+      background: rgba(108, 117, 125, 1);
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      padding-left: 30px;
+      gap: 28px;
+      &__text1 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        h1 {
+          font-weight: 600;
+          font-style: SemiBold;
+          font-size: 30px;
+          line-height: 100%;
+          letter-spacing: 0%;
+          color: white;
+        }
+        ul {
+          margin-left: 20px;
+
+          li {
+            margin-top: 10px;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 15px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            color: rgba(255, 255, 255, 0.795);
+          }
+        }
+        &--filter {
+          display: flex;
+          align-items: center;
+          gap: 100px;
+          color: white;
+          margin-top: 10px;
+        }
+      }
+    }
+    &--block2 {
+      width: 60%;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 50px;
+      &__card {
+        position: relative;
+        width: 45%;
+        height: 300px;
+        background: rgba(222, 226, 230, 1);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 3px;
+        transition: 0.8s;
+        &:hover {
+          transform: translateY(-10px);
+        }
+        a {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          font-size: 20px;
+        }
+        button {
+          padding: 5px 5px;
+          border: none;
+          color: white;
+          background: rgba(108, 117, 125, 1);
+          border-radius: 5px;
+          transition: 0.8s;
+          &:hover {
+            color: black;
+            background: white;
+            transform: translate(1.1);
+          }
+        }
+        h2 {
+          font-size: 18px;
+          font-weight: 400;
+        }
+        img {
+          width: 100%;
+          height: 60%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
