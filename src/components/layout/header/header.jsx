@@ -4,7 +4,6 @@ import { FiUser } from "react-icons/fi";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { SlBasket } from "react-icons/sl";
 import { Link, useNavigate } from "react-router-dom";
-import logo from "../../../assets/parfumelogo.png";
 
 const Header = () => {
   const nav = useNavigate();
@@ -12,7 +11,12 @@ const Header = () => {
     <div id="header">
       <div className="container">
         <div className="header">
-          <img src={logo} alt="" width={110} onClick={() => nav("/")} />
+          <img
+            src="https://www.fragrantica.com/mdimg/dizajneri/o.4748.jpg"
+            alt=""
+            width={110}
+            onClick={() => nav("/")}
+          />
           <div className="header--nav">
             <Link to={"/"}>Home</Link>
             <Link to={"/product"}>Product</Link>
